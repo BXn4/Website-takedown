@@ -1,6 +1,6 @@
 body {
     background-color: #0a0a0a;
-    color: #fff;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     margin: 0;
@@ -22,7 +22,6 @@ p {
 }
 
 div {
-    margin: auto;
     background-color: maroon;
     width: 400px;
     border: 1px solid white;
@@ -70,3 +69,32 @@ a:active {
     background-color: transparent;
     text-decoration: underline
 }
+
+.fadein {
+    animation: fadein 1s ease-in;
+  }
+  
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+iframe {
+    animation: fadeinBottom 1s ease-in;
+}
+@keyframes fadeinBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(+20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
